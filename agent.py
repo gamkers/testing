@@ -6,7 +6,7 @@ import pandas as pd
 import environ
 
 openai.api_key = st.secrets["api"]
-
+API_KEY = openai.api_key
 
 def create_agent(filename: str):
     """
