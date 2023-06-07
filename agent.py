@@ -5,10 +5,7 @@ import pandas as pd
 # Setting up the api key
 import environ
 
-env = environ.Env()
-environ.Env.read_env()
-
-API_KEY = env("apikey")
+openai.api_key = st.secrets["api"]
 
 
 def create_agent(filename: str):
