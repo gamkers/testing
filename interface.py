@@ -8,8 +8,8 @@ import pandas as pd
 # Setting up the api key
 import environ
 
-openai.api_key = st.secrets["api"]
-API_KEY = openai.api_key
+api_key = st.secrets["api"]
+API_KEY = api_key
 
 def create_agent(filename: str):
     """
